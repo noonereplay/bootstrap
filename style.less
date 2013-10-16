@@ -1,0 +1,231 @@
+
+//Define Bootstrap
+@import  "/less/bootstrap.less";
+//@import  "/less/labels-badges.less";
+//@import  "/less/sprites.less";
+//@import  "/less/variables.less";
+//@import  "/less/font-awesome.less";
+@import  "/less/responsive.less";
+
+
+@cat-color:#F36F21;
+@cat-colorDarker:#E82C0C;
+//navbarBackground:@cat-colorDarker;
+//@navbarBackgroundHighlight:@cat-color;
+
+@iconSpritePath:"/img/glyphicons-halflings-white.png";
+@FontAwesomePath:   'font';
+@baseFontSize: 14px;
+@media (min-width: 600px);
+
+body{
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+	.icon-github-alt{
+		margin-right:15px;
+	}
+	
+}
+
+.navbar-cat{
+	.navbar-inverse;
+	.navbar-inner{
+		background:@cat-color;
+		border-color:@cat-colorDarker;
+		-webkit-box-shadow: 0 0px 5px @grayLight;
+		-moz-box-shadow: 0 0px 5px @grayLight;
+		box-shadow: 0 0px 5px @grayLight;
+		
+		.container{
+			margin-left: 0px;
+		}
+	}
+	span{
+		vertical-align: middle;
+	}
+}
+
+.navbar-cat-nocorn{
+	.navbar-inner{
+		background:@cat-color;
+		border-color:@cat-colorDarker;
+		-webkit-box-shadow: 0 0px 5px @grayLight;
+		-moz-box-shadow: 0 0px 5px @grayLight;
+		box-shadow: 0 0px 5px @grayLight;
+		
+		.container{
+			margin-left: 0px;
+		}
+	}
+	span{
+		vertical-align: middle;
+	}
+}
+
+.login-upper-cat{
+	//margin-top:80px;
+
+}
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+body{
+//background-color:@grayLighter;
+
+}
+
+
+#cat-warper{
+	margin: 10px 20px;
+	//background-color:@white;
+	
+	.contentWarper{
+		
+		//font-family:DilleniaUPC, serif, sans-serif, TH SarabunPSK,THSarabunNew;
+		//font-family: Tahoma,Arial, Helvetica, sans-serif;
+		//font-weight:bold;
+		
+		ul{
+			background:lighten(@grayLighter,3%);
+			//.border-radius(1.5px) !important;
+			.border-radius-custom(5px,5px,5px,5px);
+			li{
+				line-height:110%;
+				padding-left:20px;
+				a{
+					//font-size:1em;
+					color:@gray;
+					&:hover{
+						color:@white;
+						background:@orange;
+						//color:darken(@cat-color,5%);
+					}
+				}
+				
+			}
+			
+			.active{
+					font-size:1.2em;
+					padding-left:0px;
+					padding-top:0px;
+					line-height:1.5em;
+					font-weight:bold;
+					a{
+					padding-bottom:0px;
+					.border-radius-custom(5px,5px,0px,0px);
+					background:@cat-color;
+					color:@white;
+					&:hover{
+						color:@white;
+					}
+					//border: darken(@cat-color,5%) solid 1px;
+					height:1.2em;
+					}
+			}
+			
+		}
+		
+		
+		.contentHeader{
+			padding-left:20px;
+			background:@cat-color;
+			color:@white;
+			font-size:1.2em;
+			line-height:2em;
+			height:2em;
+			vertical-align:middle;
+			.border-radius-custom(5px,5px,0px,0px);
+			///.border-radius(5px) !important;
+
+		}
+	}
+	
+	.cat-label{
+		//.label;
+		background-color: @orange;
+		.btn-large;
+		width:95%;
+		color:@white;
+		//border: @grayLight solid 1px;
+
+	}
+}
+.contentBox{
+			.hero-unit;
+			padding:	10px 0px;
+			background:lighten(@grayLighter,3%);
+			
+			.content-unit{
+				margin:0px 0px;
+				.content-unit-header{
+					padding-left:20px;
+					margin-right:50%;
+					h3{
+					color:@white;
+					font-size:1.2em;
+					}
+					background:@cat-color;
+					.border-radius-custom(20px,0px,0px,20px);
+				}
+					
+				.content-unit-detail{
+					li {
+						a{
+							color:@grayDark;
+						
+						&:hover{
+							color:@orange;
+						}
+						}
+					}
+					
+				}
+			
+			
+			}
+			
+
+
+}
+
+
+#cat-logo{
+	margin-top:5px;
+	h1{
+		background-image:url('images/cat-logo.png');
+		background-repeat:no-repeat;
+		background-position:left middle; 
+		width:156px;
+		height:73px;
+	}
+}
+
+.brand{
+			visibility:hidden;
+		}
+#cat-title{
+	color:@white;
+	margin-top:40px;
+}
+
+
+#bottomWaper{
+	vertical-align: middle;
+	background:lighten(@grayLighter,1%);
+	border-top: darken(@grayLighter,5%) solid 2px;
+	padding: 20px 0px;
+
+	.bottom-left{
+		text-align:left;
+	}
+	.bottom-right{
+		text-align:right;
+	}
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+	display: block;    
+	backgroud: @blue;	
+}
